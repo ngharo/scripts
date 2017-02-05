@@ -25,7 +25,7 @@ sql_dump() {
     chmod 0600 "$dump"
 
     result="OK"
-        [[ $req_code -eq 0 ]] || result="FAIL"
+    [[ $req_code -eq 0 ]] || result="FAIL"
     printf "%s\n" "$result"
 
     return $ret_code
